@@ -41,6 +41,7 @@ namespace Unity.LEGO.Game
         {
             EventManager.AddListener<GameOverEvent>(OnGameOver);
 
+
             m_FreeLookCamera = FindObjectOfType<CinemachineFreeLook>();
 #if !UNITY_EDITOR
             Cursor.lockState = CursorLockMode.Locked;
@@ -57,6 +58,7 @@ namespace Unity.LEGO.Game
                 m_FreeLookCamera.m_XAxis.m_InputAxisName = "";
                 m_FreeLookCamera.m_YAxis.m_InputAxisName = "";
             }
+
         }
 
         void Start()
